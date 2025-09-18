@@ -239,6 +239,7 @@ extern const FFFilter ff_vf_corr;
 extern const FFFilter ff_vf_cover_rect;
 extern const FFFilter ff_vf_crop;
 extern const FFFilter ff_vf_cropdetect;
+extern const FFFilter ff_vf_crt;
 extern const FFFilter ff_vf_cue;
 extern const FFFilter ff_vf_curves;
 extern const FFFilter ff_vf_datascope;
