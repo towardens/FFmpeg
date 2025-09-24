@@ -263,6 +263,7 @@ OBJS-$(CONFIG_CORR_FILTER)                   += vf_corr.o framesync.o
 OBJS-$(CONFIG_COVER_RECT_FILTER)             += vf_cover_rect.o lavfutils.o
 OBJS-$(CONFIG_CROP_FILTER)                   += vf_crop.o
 OBJS-$(CONFIG_CROPDETECT_FILTER)             += vf_cropdetect.o edge_common.o
+OBJS-$(CONFIG_CRT_FILTER)                    += vf_crt.o crt/crt_core.o crt/crt_ntsc.o
 OBJS-$(CONFIG_CUE_FILTER)                    += f_cue.o
 OBJS-$(CONFIG_CURVES_FILTER)                 += vf_curves.o
 OBJS-$(CONFIG_DATASCOPE_FILTER)              += vf_datascope.o

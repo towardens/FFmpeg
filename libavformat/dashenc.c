@@ -1731,6 +1731,8 @@ static int dash_write_header(AVFormatContext *s)
     int i, ret;
     for (i = 0; i < s->nb_streams; i++) {
         OutputStream *os = &c->streams[i];
+        av_dict_copy(&os->ctx->metadata, s->metadata, 0);
+        av_dict_copy(&os->ctx->metadata, s->streams[i]->metadata, 0);
         if ((ret = avformat_write_header(os->ctx, NULL)) < 0)
             return ret;
 
